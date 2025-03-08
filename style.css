@@ -1,0 +1,30 @@
+html, body {
+    background-color: white;
+}
+
+body {
+    background-color: white;
+  }
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: black;
+}
+
+p{
+    color: rgb(36, 225, 58);
+}
+
+button {
+    /* Example Style, replace with your own! */
+    background-color: green;    /* button color */
+    color: white;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
