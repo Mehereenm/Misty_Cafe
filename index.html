@@ -10,23 +10,52 @@
     </head>
 
     <body>
+
         <div>
         <h1>Misty Skies Restaurant</h1>
+
         <!-- Show at least six pictures of food or the restaurant interior. The images in the gallery should be displayed as a slider. -->
-         <div class="slider">
-            <div class="slide image">
+         <div class="slideshow">
+            <!--Image 1 -->
+            <div class="slideimage fade">
+                <div class="numbertext">1 / 6</div>
                 <img src="./img/Waffles.png" style="width: 100%;"/>
-                <div class="slide text">Waffles</div>
+                <div class="text">Blueberry Waffles</div>
             </div>
 
-            <div class="slide image">
+            <!--Image 2 -->
+            <div class="slideimage fade">
+                <div class="numbertext">2 / 6</div>
                 <img src="./img/Hedgehog Crepe Cake.png" style="width: 100%;"/>
-                <div class="slide text">Hedgehog Crepe Cake</div>
+                <div class="text">Hedgehog Crepe Cake</div>
             </div>
 
-            <div class="slide image">
+            <!--Image 3 -->
+            <div class="slideimage fade">
+                <div class="numbertext">3 / 6</div>
                 <img src="./img/Baked Ziti.png" style="width: 100%;"/>
-                <div class="slide text">Baked Ziti</div>
+                <div class="text">Baked Ziti</div>
+            </div>
+
+            <!--Image 4 -->
+            <div class="slideimage fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./img/Oven Crisp.png" style="width: 100%;"/>
+                <div class="text">Crispy Oven Baked Chicken</div>
+            </div>
+
+            <!--Image 5 -->
+            <div class="slideimage fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./img/Crepe.png" style="width: 100%;"/>
+                <div class="text">Strawberry Cream Crepe</div>
+            </div>
+
+            <!--Image 6 -->
+            <div class="slideimage fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./img/French Toast.png" style="width: 100%;"/>
+                <div class="text">Cream Cheese Stuffed French Toast</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -38,16 +67,21 @@
          <br>
 
          <!--slider dots-->
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
          
         <p>Doloremque, itaque aperiam facilis reum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
         <button type="button">Order Now</button>
         <br>
         
         </div>
-
-        <div>
-
-        </div>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 
 </html>
