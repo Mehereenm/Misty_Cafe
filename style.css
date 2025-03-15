@@ -32,7 +32,7 @@ h1{
 
 .banner-content {
     margin-top: 80px;
-    padding-top: 40px;
+    padding: 50px;
     position: absolute;
     top: 20px; /* Space from the top */
     left: 200px; /* Space from the left */
@@ -91,7 +91,7 @@ h1{
 /* Responsive Design */
 @media (max-width: 768px) {
     .full-banner {
-        height: 60vh; /* Adjust height for smaller screens */
+        height: 100vh; /* Adjust height for smaller screens */
     }
     .banner-image img {
         width: 100%;
