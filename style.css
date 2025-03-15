@@ -42,7 +42,7 @@ button {
 .slideimage {
     display: none;
     width: 100%;
-    height: 395px;
+    height: 100%;
 
 }
 
@@ -217,3 +217,210 @@ button {
     padding: 20px;
   }
 
+p {
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3265cb;
+    text-align: justify;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.6;
+ }
+
+ 
+ .abtitle {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    #064cd8
+}
+
+
+
+.slideshow {
+    max-width: 1000px;  /* Limit width on large screens */
+    height: 500px;       /* Fixed height for large screens */
+    margin: auto;
+    position: relative;
+}
+.slideimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill the space */
+}
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    background-color: #f4f1ea;
+    color: #3d3b3b;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ }
+ 
+ 
+ /* Navigation Bar */
+ .navbar {
+    background: #5c677d;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+ .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+ }
+ 
+ 
+ .navbar ul li {
+    margin: 0 20px;
+ }
+ 
+ 
+ .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+ }
+ 
+ 
+ .navbar ul li a:hover {
+    color: #d1cfcf;
+ }
+ 
+ 
+ /* Logo */
+ .logo {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+ }
+ 
+ 
+ /* Menu Section */
+ .menu-container {
+    margin-top: 80px;
+    padding: 40px;
+ }
+ 
+ 
+ h1 {
+    font-size: 36px;
+    color: #4a5568;
+    margin-bottom: 20px;
+ }
+ 
+ 
+ /* Menu Grid */
+ .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+ }
+ 
+ 
+ /* Menu Card */
+ .menu-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+ }
+ 
+ 
+ .menu-pic {
+    width: 100%;  /* Make sure it takes the full width of the card */
+    height: 180px; /* Adjust height as needed */
+    overflow: hidden; /* Prevents overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 8px;
+}
+
+ 
+ 
+ .menu-card:hover {
+    transform: scale(1.05);
+ }
+ 
+ 
+ 
+ .menu-card h2 {
+    font-size: 22px;
+    color: #5c677d;
+    margin-top: 15px;
+ }
+ 
+ 
+ .menu-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+ }
+ 
+ 
+ /* Price Styling */
+ .price {
+    display: block;
+    font-size: 18px;
+    color: #a17a66;
+    font-weight: bold;
+    margin-top: 10px;
+ }
+ 
+ 
+ /* Footer */
+ footer {
+    background: #5c677d;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+ }
+ 
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+ }
+
+ 
