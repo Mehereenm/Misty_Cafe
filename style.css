@@ -11,9 +11,7 @@ body {
  }
 
 
-
-
-/* Hero Slider Container */
+/* Hero Slider*/
 .banner-slider {
     margin-top: 87px;
     position: relative;
@@ -39,7 +37,7 @@ body {
     object-fit: cover;
 }
 
-/* Slide Text Styling */
+
 .slide-text {
     position: absolute;
     flex-wrap: wrap;
