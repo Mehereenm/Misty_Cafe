@@ -3,25 +3,43 @@
     <head>
         <title>Mehereen's Restaurant Website</title>
         
-        <link href="style.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        
 
     </head>
 
     <body>
-
+        <div>
+        <header>
+            <a href="#" class="logo">Misty Cafe</a>
+            <div id="cart-icon">
+                <i class="ri-shopping-bag-2-line"></i>
+                <span class="cart-count">3</span>
+            </div>
+        </header>
+        
         <div>
             <!-- library to show a hamburger menu -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="navbar" id="topnav">
+                <a href="#" class="logo">Misty Cafe</a>
                 <a href="index.html" class="active">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="contact.html">Contact</a>
                 <a href="about.html">About</a>
+                <div style="position: fixed; font-size: 30px; top: 25px; right: 20px;">
+                    <div style="position: relative;">
+                        <i class="ri-shopping-bag-2-line"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
+            
+        
 
         <!-- Full-Page Banner with Restaurant Name -->
         <!-- Banner Slider -->

@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-    <!-- library to show a hamburger menu -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="navbar" id="topnav">
-        <a href="index.html">Home</a>
-        <a href="menu.html" class="active">Menu</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Misty Cafe</a>
+        <div style="position: fixed; font-size: 30px; top: 25px; right: 20px;">
+            <div style="position: relative;">
+                <i class="ri-shopping-bag-2-line"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+        
+    </header>
 
     <!-- Menu Section -->
     <div class="menu-container">
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="./img/coco.png" alt="cart-img">
+                        <div class="cart-detail">
+                            <h2 class="product-title">Cloudy Cocoa</h2>
+                            <span class="cart-price">$5.99</span>
+                            <div class="cart-quantity">
+                                <button id="decrement">-</button>
+                                <span class="number">1</span>
+                                <button id="increment">+</button>
+                            </div>
+                        </div>
+                        <i class="ri-delete-bin-line cart-delete"></i>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button class="btn-buy">Buy Now</button>
+                <i class="ri-close-line" id="cart-close"></i>
+        </div>
+
         <h1>Our Cozy Menu</h1>
 
         <div class="menu-grid">
@@ -26,70 +52,79 @@
                 <img src="./img/Soup_.png" alt="Creamy Broccoli Soup">
                 <h2>Creamy Broccoli Soup</h2>
                 <p>A rich and creamy soup with tender broccoli and melted cheese, perfect for warming you up on a cool, rainy day.</p>
-                <span class="price">$7.99</span>
+                <span class="price">$11.99</span>
             </div>
 
             <div class="menu-card">
                 <img src="./img/Waffles.png" alt="Morning Mist Waffles">
                 <h2>Morning Mist Waffles</h2>
                 <p>Fluffy golden waffles topped with warm blueberry compote and a drizzle of maple syrup—like the first light of dawn breaking through the mist.</p>
-                <span class="price">$8.99</span>
+                <span class="price">$14.99</span>
             </div>
-            
+
             <div class="menu-card">
                 <img src="./img/Hedgehog Crepe Cake.png" alt="Whispering Woods Crepe Cake">
                 <h2>Hedgehog Crepe Cake</h2>
                 <p>Delicate layers of soft crepes stacked high, filled with hazelnut cream and a touch of cocoa—bringing the warmth of a woodland hideaway to your plate.</p>
-                <span class="price">$10.49</span>
+                <span class="price">$16.49</span>
             </div>
-            
+
             <div class="menu-card">
                 <img src="./img/Baked Ziti.png" alt="Ember Glow Ziti">
                 <h2>Ember Glow Ziti</h2>
                 <p>A comforting baked pasta dish, bubbling with rich marinara sauce, melted mozzarella, and ricotta—just like a warm fire on a rainy evening.</p>
                 <span class="price">$12.99</span>
             </div>
-            
+
             <div class="menu-card">
                 <img src="./img/Oven Crisp.png" alt="Stormy Skillet Chicken">
                 <h2>Stormy Skillet Chicken</h2>
                 <p>Crispy, golden-brown oven-fried chicken with a hint of rosemary and garlic—perfectly crunchy on the outside, tender on the inside, like thunder and rain in harmony.</p>
                 <span class="price">$14.99</span>
             </div>
-            
+
             <div class="menu-card">
                 <img src="./img/Crepe.png" alt="Blushing Dawn Crepe">
                 <h2>Blushing Dawn Crepe</h2>
                 <p>A delicate crepe filled with fresh strawberries and silky vanilla cream—soft, sweet, and as dreamy as a sunrise after the rain.</p>
                 <span class="price">$9.49</span>
             </div>
-            
+
             <div class="menu-card">
                 <img src="./img/French Toast.png" alt="Cloud-Kissed French Toast">
                 <h2>Cloud-Kissed French Toast</h2>
                 <p>Thick slices of brioche stuffed with sweet cream cheese, griddled to golden perfection, and dusted with powdered sugar—like a fluffy cloud drifting through a cozy morning.</p>
-                <span class="price">$11.49</span>
+                <div class="price-cart">
+                    <span class="price">$11.49</span>
+                </div>
             </div>
-            
 
             <div class="menu-card">
                 <img src="./img/soup.png" alt="Stormy Night Stew">
                 <h2>Stormy Night Stew</h2>
                 <p>Slow-simmered beef and vegetables for a hearty meal.</p>
-                <span class="price">$12.99</span>
+                <div class="price-cart">
+                    <span class="price">$12.99</span>
+                </div>
             </div>
 
             <div class="menu-card">
                 <img src="./img/coco.png" alt="Cloudy Cocoa">
                 <h2>Cloudy Cocoa</h2>
                 <p>Rich hot chocolate topped with vanilla whipped cream.</p>
-                <span class="price">$5.99</span>
+                <div class="price-cart">
+                    <span class="price">$5.99</span>
+                    <i class="ri-shopping-bag-2-line add-cart"></i>
+                </div>
+                
             </div>
+
+            
         </div>
     </div>
 
     <p class="warm-message">Experience the taste of comfort in every bite!</p>
-        <button class="order-button">Order Here</button>
+    <button class="order-button">Order Here</button>
 
     <!-- Business Hours Section -->
     <footer>
@@ -101,7 +136,7 @@
                 <a href="https://www.twitter.com" target="_blank">Twitter</a>
                 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
             </div>
-    
+
             <div class="business-hours">
                 <h2>Business Hours</h2>
                 <p class="business">Monday - Friday: 8:00 AM - 9:00 PM</p>
@@ -109,10 +144,6 @@
             </div>
         </div>
     </footer>
-    
 
-
-
-        
-    </body>
+</body>
 </html>
