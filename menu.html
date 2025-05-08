@@ -9,12 +9,13 @@
 
     <header>
         <a href="#" class="logo">Misty Cafe</a>
-        <div style="position: fixed; font-size: 30px; top: 25px; right: 20px;">
+        <div id="cart-icon" style="position: fixed; font-size: 30px; top: 25px; right: 20px;">
             <div style="position: relative;">
                 <i class="ri-shopping-bag-2-line"></i>
                 <span class="cart-count">0</span>
             </div>
         </div>
+        
         
     </header>
 
@@ -23,7 +24,7 @@
         <div class="cart">
             <h2 class="cart-title">Your Cart</h2>
                 <div class="cart-content">
-                    <div class="cart-box">
+                    <!--<div class="cart-box">
                         <img src="./img/coco.png" alt="cart-img">
                         <div class="cart-detail">
                             <h2 class="product-title">Cloudy Cocoa</h2>
@@ -35,7 +36,7 @@
                             </div>
                         </div>
                         <i class="ri-delete-bin-line cart-delete"></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="total">
                     <div class="total-title">Total</div>
@@ -50,7 +51,7 @@
         <div class="menu-grid">
             <div class="menu-card">
                 <img src="./img/Soup_.png" alt="Creamy Broccoli Soup">
-                <h2>Creamy Broccoli Soup</h2>
+                <h2 class="prodname">Creamy Broccoli Soup</h2>
                 <p>A rich and creamy soup with tender broccoli and melted cheese, perfect for warming you up on a cool, rainy day.</p>
                 <div class="price-cart">
                     <span class="price">$11.99</span>
@@ -60,7 +61,7 @@
 
             <div class="menu-card">
                 <img src="./img/Waffles.png" alt="Morning Mist Waffles">
-                <h2>Morning Mist Waffles</h2>
+                <h2 class="prodname">Morning Mist Waffles</h2>
                 <p>Fluffy golden waffles topped with warm blueberry compote and a drizzle of maple syrup—like the first light of dawn breaking through the mist.</p>
                 <div class="price-cart">
                     <span class="price">$14.99</span>
@@ -70,7 +71,7 @@
 
             <div class="menu-card">
                 <img src="./img/Hedgehog Crepe Cake.png" alt="Whispering Woods Crepe Cake">
-                <h2>Hedgehog Crepe Cake</h2>
+                <h2 class="prodname">Hedgehog Crepe Cake</h2>
                 <p>Delicate layers of soft crepes stacked high, filled with hazelnut cream and a touch of cocoa—bringing the warmth of a woodland hideaway to your plate.</p>
                 <div class="price-cart">
                     <span class="price">$16.49</span>
@@ -80,7 +81,7 @@
 
             <div class="menu-card">
                 <img src="./img/Baked Ziti.png" alt="Ember Glow Ziti">
-                <h2>Ember Glow Ziti</h2>
+                <h2 class="prodname">Ember Glow Ziti</h2>
                 <p>A comforting baked pasta dish, bubbling with rich marinara sauce, melted mozzarella, and ricotta—just like a warm fire on a rainy evening.</p>
                 <div class="price-cart">
                     <span class="price">$12.99</span>
@@ -90,7 +91,7 @@
 
             <div class="menu-card">
                 <img src="./img/Oven Crisp.png" alt="Stormy Skillet Chicken">
-                <h2>Stormy Skillet Chicken</h2>
+                <h2 class="prodname">Stormy Skillet Chicken</h2>
                 <p>Crispy, golden-brown oven-fried chicken with a hint of rosemary and garlic—perfectly crunchy on the outside, tender on the inside, like thunder and rain in harmony.</p>
                 <div class="price-cart">
                     <span class="price">$14.99</span>
@@ -100,7 +101,7 @@
 
             <div class="menu-card">
                 <img src="./img/Crepe.png" alt="Blushing Dawn Crepe">
-                <h2>Blushing Dawn Crepe</h2>
+                <h2 class="prodname">Blushing Dawn Crepe</h2>
                 <p>A delicate crepe filled with fresh strawberries and silky vanilla cream—soft, sweet, and as dreamy as a sunrise after the rain.</p>
                 <div class="price-cart">
                     <span class="price">$9.49</span>
@@ -110,7 +111,7 @@
 
             <div class="menu-card">
                 <img src="./img/French Toast.png" alt="Cloud-Kissed French Toast">
-                <h2>Cloud-Kissed French Toast</h2>
+                <h2 class="prodname">Cloud-Kissed French Toast</h2>
                 <p>Thick slices of brioche stuffed with sweet cream cheese, griddled to golden perfection, and dusted with powdered sugar—like a fluffy cloud drifting through a cozy morning.</p>
                 <div class="price-cart">
                     <span class="price">$11.49</span>
@@ -120,7 +121,7 @@
 
             <div class="menu-card">
                 <img src="./img/soup.png" alt="Stormy Night Stew">
-                <h2>Stormy Night Stew</h2>
+                <h2 class="prodname">Stormy Night Stew</h2>
                 <p>Slow-simmered beef and vegetables for a hearty meal.</p>
                 <div class="price-cart">
                     <span class="price">$12.99</span>
@@ -130,7 +131,7 @@
 
             <div class="menu-card">
                 <img src="./img/coco.png" alt="Cloudy Cocoa">
-                <h2>Cloudy Cocoa</h2>
+                <h2 class="prodname">Cloudy Cocoa</h2>
                 <p>Rich hot chocolate topped with vanilla whipped cream.</p>
                 <div class="price-cart">
                     <span class="price">$5.99</span>
@@ -164,6 +165,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

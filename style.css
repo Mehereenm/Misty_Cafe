@@ -561,7 +561,7 @@ header {
 .cart {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 320px;
     height: 100%;
     background-color: #fff;
@@ -569,6 +569,11 @@ header {
     padding: 65px 20px 40px;
     z-index: 100;
     overflow: auto;
+    transition: 0.5s;
+}
+
+.cart.active {
+    right: 0;
 }
 
 .cart-title {
