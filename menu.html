@@ -7,17 +7,29 @@
 
 <body>
 
-    <header>
-        <a href="#" class="logo">Misty Cafe</a>
-        <div id="cart-icon" style="position: fixed; font-size: 30px; top: 25px; right: 20px;">
-            <div style="position: relative;">
-                <i class="ri-shopping-bag-2-line"></i>
-                <span class="cart-count">0</span>
+    <body>
+        <div class="navbar" id="topnav">
+            <a href="#" class="logo">Misty Cafe</a>
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+    
+            <!-- Cart Icon -->
+            <div id="cart-icon" style="position: fixed; font-size: 30px; top: 25px; right: 20px;">
+                <div style="position: relative;">
+                    <i class="ri-shopping-bag-2-line"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </div>
             </div>
+    
+            <!-- Hamburger Icon -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        
-        
-    </header>
+
+    
 
     <!-- Menu Section -->
     <div class="menu-container">

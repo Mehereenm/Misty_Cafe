@@ -317,7 +317,7 @@ p {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 900;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
  }
  
@@ -570,6 +570,7 @@ header {
     z-index: 100;
     overflow: auto;
     transition: 0.5s;
+    z-index: 999;
 }
 
 .cart.active {
